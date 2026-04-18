@@ -93,6 +93,12 @@ export default function LoginPage() {
                     className="w-full bg-linear-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-4 py-3 rounded-lg font-semibold transition duration-200 transform hover:scale-105 shadow-lg mb-6">
                     {buttonDisabled ? "Fill in all fields" : "Log In"}
                 </button>
+
+                // add a link for forget password page
+
+                <p className="text-gray-400 text-center text-sm">
+                    <Link href="/forgetpassword" className="text-blue-400 hover:text-blue-300 font-semibold transition">Forget Password?</Link>
+                </p>
                 
                 <p className="text-gray-400 text-center text-sm">
                     Don't have an account? <Link href="/signup" className="text-blue-400 hover:text-blue-300 font-semibold transition">
